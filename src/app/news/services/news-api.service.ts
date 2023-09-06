@@ -10,7 +10,7 @@ export class NewsApiService {
 
   apiKey = "9cf0385c9eb84c75b356328e40e98357"
   baseUrl = "https://newsai.org/v2/top-headlines"
-  constructor(private  http: HttpClient) { }
+  constructor(private  http: HttpClient) {  }
 
   getSources() {
     return this.http.get(`${this.baseUrl}/sources?apiKey=${this.apiKey}`);
